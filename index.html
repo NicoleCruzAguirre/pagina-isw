@@ -10,10 +10,9 @@
   <header>
     <nav class="navbar">
       <h1 class="logo">Ing. Software</h1>
-      <div class="menu">
+      <div class="menu menu-navegacion">
         <a href="vida-universitaria.html">Comunidad ITSON</a>
-        <a href="plan-estudios.html">Elementos de Competencia</a>
-        <a href="plan-estudios.html">Recursos</a>
+        <a href="plan-estudios.html">Unidades de Competencia</a>
         <a href="plan-estudios.html">Test Interactivo</a>
       </div>
     </nav>
@@ -23,14 +22,14 @@
     <!-- Sección principal -->
   <section id="inicio" class="hero">
     <div class="hero-content">
-      <h2>Descubre el futuro con Ingeniería en Software</h2>
-      <p>Forma parte de la nueva generación de innovadores tecnológicos.</p>
+      <h2>Ingeniería en Software el trabajo del futuro</h2>
+      <p>Descubre lo fundamental de la Ingeniería en Software.</p>
       <button onclick="scrollToSection('test')">Realiza tu test</button>
     </div>
   </section>
 
   <!-- Significado -->
-  <section id="significado" class="section">
+  <section id="significado" class="section section-feature">
     <h2>¿Qué significa Ingeniería de Software?</h2>
     <p>
       La ingeniería de software es el proceso de analizar las necesidades de los usuarios
@@ -42,10 +41,13 @@
       En contraste con la simple programación, la ingeniería de software se utiliza para
       sistemas más grandes y complejos, críticos para empresas y organizaciones.
     </p>
+    <div>
+      <img class="feature-image" src="./imagenes/tipos-de-software.jpeg" alt="Ingeniería de Software">
+    </div>
   </section>
 
   <!-- Software -->
-  <section id="software" class="section">
+  <section id="software" class="section section-columns section-alt">
     <h2>Ingeniería de Software vs Desarrollo de Software</h2>
 
     <p>Una distinción clave para comprender la ingeniería de software es compararla con el desarrollo de software.</p>
@@ -67,160 +69,191 @@
   </section>
 
   <!-- Tipos -->
-  <section id="tipos" class="section">
+  <section id="tipos" class="section section-icons">
     <h2>Otros Tipos de Ingeniería de Software</h2>
 
     <p>Existen diversos tipos de ingeniería de software tanto en front-end como back-end.</p>
+    <div class="icon-grid">
+      <div class="icon-card">
+        <div class="img-card-container">
+          <img class="img-card" src="./imagenes/imagen4.jpeg">
+        </div>
+        <h3>Front-End</h3>
+        <p>El front-end trabaja con interfaces visuales para el usuario final.</p>
+      </div>
+      <div class="icon-card">
+        <div class="img-card-container">
+          <img class="img-card" src="./imagenes/imagen2.jpg">
+        </div>
+        <h3>Back-End</h3>
+        <p>El back-end se enfoca en la lógica, servidores, bases de datos y procesos internos.</p>
+      </div>
+      <div class="icon-card">
+        <div class="img-card-container">
+          <img class="img-card" src="./imagenes/imagen3.jpeg">
+        </div>
+        <h3>Full Stack</h3>
+        <p>
+          También existe la ingeniería de software “full stack”, donde el profesional trabaja
+          tanto en front-end como back-end.
+        </p>
+        <p>Los ingenieros full stack son altamente demandados por su versatilidad.</p>
+      </div>
+    </div>
 
-    <p>El front-end trabaja con interfaces visuales para el usuario final.</p>
-
-    <p>El back-end se enfoca en la lógica, servidores, bases de datos y procesos internos.</p>
-
-    <p>
-      También existe la ingeniería de software “full stack”, donde el profesional trabaja
-      tanto en front-end como back-end.
-    </p>
-
-    <p>Los ingenieros full stack son altamente demandados por su versatilidad.</p>
   </section>
 
   <!-- Tendencias -->
-  <section id="tendencia" class="section">
+  <section id="tendencia" class="section section-cards">
     <h2>Tendencias en Ingeniería de Software</h2>
+    <div class="card-grid">
 
-    <!-- 1 -->
-    <h3>1. Inteligencia Artificial aplicada al desarrollo de software</h3>
-    <p>
-      Nos movemos hacia un Software Engineering 3.0, donde la IA colabora de forma activa en el desarrollo:
-      entiende intención, diseña, escribe código y toma decisiones con autonomía.
-    </p>
-    <h4>Ejemplos</h4>
-    <ul>
-      <li>Autocompletado de código.</li>
-      <li>Detección automática de errores.</li>
-      <li>Generación de pruebas.</li>
-    </ul>
-    <h4>¿Por qué es tendencia?</h4>
-    <p>Acelera el trabajo, reduce errores y permite enfocarse en tareas más complejas.</p>
+      <div class="trend-card">
+        <h3>1. Inteligencia Artificial aplicada al desarrollo de software</h3>
+        <p>
+          Nos movemos hacia un Software Engineering 3.0, donde la IA colabora de forma activa en el desarrollo:
+          entiende intención, diseña, escribe código y toma decisiones con autonomía.
+        </p>
+        <h4>Ejemplos</h4>
+        <ul>
+          <li>Autocompletado de código.</li>
+          <li>Detección automática de errores.</li>
+          <li>Generación de pruebas.</li>
+        </ul>
+        <h4>¿Por qué es tendencia?</h4>
+        <p>Acelera el trabajo, reduce errores y permite enfocarse en tareas más complejas.</p>
+      </div>
 
-    <!-- 2 -->
-    <h3>2. Automatización avanzada (CI/CD)</h3>
-    <p>
-      Pipelines inteligentes toman decisiones automáticas: promover versiones, hacer rollback,
-      mejorar pruebas y aplicar políticas de seguridad.
-    </p>
-    <h4>La automatización permite:</h4>
-    <ul>
-      <li>Pruebas automáticas en cada cambio.</li>
-      <li>Despliegues sin intervención humana.</li>
-      <li>Detección inmediata de errores.</li>
-    </ul>
-    <h4>¿Por qué importa?</h4>
-    <p>Mejora la confiabilidad y seguridad del software.</p>
+      <div class="trend-card">
+        <h3>2. Automatización avanzada (CI/CD)</h3>
+        <p>
+          Pipelines inteligentes toman decisiones automáticas: promover versiones, hacer rollback,
+          mejorar pruebas y aplicar políticas de seguridad.
+        </p>
+        <h4>La automatización permite:</h4>
+        <ul>
+          <li>Pruebas automáticas en cada cambio.</li>
+          <li>Despliegues sin intervención humana.</li>
+          <li>Detección inmediata de errores.</li>
+        </ul>
+        <h4>¿Por qué importa?</h4>
+        <p>Mejora la confiabilidad y seguridad del software.</p>
+      </div>
 
-    <!-- 3 -->
-    <h3>3. Arquitecturas basadas en microservicios</h3>
-    <p>
-      La IA ayuda en decisiones de arquitectura, reconstrucción y generación de código,
-      aunque presenta retos como precisión de modelos y validación formal.
-    </p>
-    <h4>Ejemplo simple</h4>
-    <ul>
-      <li>Netflix divide su sistema en microservicios: usuarios, pagos, recomendaciones, etc.</li>
-    </ul>
-    <h4>Ventajas</h4>
-    <ul>
-      <li>Fácil mantenimiento.</li>
-      <li>Actualizaciones sin afectar todo el sistema.</li>
-      <li>Escalabilidad a millones de usuarios.</li>
-    </ul>
+      <div class="trend-card">
+        <h3>3. Arquitecturas basadas en microservicios</h3>
+        <p>
+          La IA ayuda en decisiones de arquitectura, reconstrucción y generación de código,
+          aunque presenta retos como precisión de modelos y validación formal.
+        </p>
+        <h4>Ejemplo simple</h4>
+        <ul>
+          <li>Netflix divide su sistema en microservicios: usuarios, pagos, recomendaciones, etc.</li>
+        </ul>
+        <h4>Ventajas</h4>
+        <ul>
+          <li>Fácil mantenimiento.</li>
+          <li>Actualizaciones sin afectar todo el sistema.</li>
+          <li>Escalabilidad a millones de usuarios.</li>
+        </ul>
+      </div>
 
-    <!-- 4 -->
-    <h3>4. Cloud computing</h3>
-    <p>
-      Uso de GitOps, seguridad integrada desde el inicio (shift-left) y observabilidad con IA.
-    </p>
-    <h4>Beneficios</h4>
-    <ul>
-      <li>Menores costos.</li>
-      <li>Alta escalabilidad.</li>
-      <li>Respaldos y seguridad mejorada.</li>
-    </ul>
+      <div class="trend-card">
+        <h3>4. Cloud computing</h3>
+        <p>
+          Uso de GitOps, seguridad integrada desde el inicio (shift-left) y observabilidad con IA.
+        </p>
+        <h4>Beneficios</h4>
+        <ul>
+          <li>Menores costos.</li>
+          <li>Alta escalabilidad.</li>
+          <li>Respaldos y seguridad mejorada.</li>
+        </ul>
+      </div>
 
-    <!-- 5 -->
-    <h3>5. DevOps</h3>
-    <p>Contenedores, Kubernetes, serverless y edge computing mejoran la velocidad y la resiliencia.</p>
-    <h4>En palabras simples</h4>
-    <ul>
-      <li>Versiones rápidas.</li>
-      <li>Menos errores.</li>
-      <li>Detección rápida de fallas.</li>
-      <li>Trabajo colaborativo eficiente.</li>
-    </ul>
+      <div class="trend-card">
+        <h3>5. DevOps</h3>
+        <p>Contenedores, Kubernetes, serverless y edge computing mejoran la velocidad y la resiliencia.</p>
+        <h4>En palabras simples</h4>
+        <ul>
+          <li>Versiones rápidas.</li>
+          <li>Menos errores.</li>
+          <li>Detección rápida de fallas.</li>
+          <li>Trabajo colaborativo eficiente.</li>
+        </ul>
+      </div>
 
-    <!-- 6 -->
-    <h3>6. Desarrollo seguro (Security by Design)</h3>
-    <p>Incluye componentes reutilizables, arquitectura componible y herramientas low-code.</p>
-    <h4>Incluye</h4>
-    <ul>
-      <li>Protección de datos.</li>
-      <li>Detectar vulnerabilidades.</li>
-      <li>Revisión segura de código.</li>
-      <li>Cumplimiento de normas.</li>
-    </ul>
-    <h4>¿Por qué es importante?</h4>
-    <p>Porque los ciberataques aumentan cada año.</p>
+      <div class="trend-card">
+        <h3>6. Desarrollo seguro (Security by Design)</h3>
+        <p>Incluye componentes reutilizables, arquitectura componible y herramientas low-code.</p>
+        <h4>Incluye</h4>
+        <ul>
+          <li>Protección de datos.</li>
+          <li>Detectar vulnerabilidades.</li>
+          <li>Revisión segura de código.</li>
+          <li>Cumplimiento de normas.</li>
+        </ul>
+        <h4>¿Por qué es importante?</h4>
+        <p>Porque los ciberataques aumentan cada año.</p>
+      </div>
 
-    <!-- 7 -->
-    <h3>7. Software basado en datos</h3>
-    <p>La sustentabilidad y la optimización energética cobran relevancia.</p>
-    <h4>Ejemplos</h4>
-    <ul>
-      <li>Recomendaciones de TikTok o YouTube.</li>
-      <li>Apps que aprenden del usuario.</li>
-      <li>Sistemas basados en estadísticas.</li>
-    </ul>
-    <h4>Razón</h4>
-    <p>Permiten software más personalizado e inteligente.</p>
+      <div class="trend-card">
+        <h3>7. Software basado en datos</h3>
+        <p>La sustentabilidad y la optimización energética cobran relevancia.</p>
+        <h4>Ejemplos</h4>
+        <ul>
+          <li>Recomendaciones de TikTok o YouTube.</li>
+          <li>Apps que aprenden del usuario.</li>
+          <li>Sistemas basados en estadísticas.</li>
+        </ul>
+        <h4>Razón</h4>
+        <p>Permiten software más personalizado e inteligente.</p>
+      </div>
 
-    <!-- 8 -->
-    <h3>8. Ingeniería de software para sistemas inteligentes</h3>
-    <p>Incluye IoT, autos autónomos y dispositivos interconectados.</p>
-    <h4>Ejemplos de uso</h4>
-    <ul>
-      <li>Refrigeradores inteligentes.</li>
-      <li>Focos inteligentes.</li>
-      <li>Relojes y sensores industriales.</li>
-      <li>Autos autónomos.</li>
-    </ul>
-    <h4>Reto principal</h4>
-    <p>Hacer que todos los dispositivos funcionen juntos.</p>
+      <div class="trend-card">
+        <h3>8. Ingeniería de software para sistemas inteligentes</h3>
+        <p>Incluye IoT, autos autónomos y dispositivos interconectados.</p>
+        <h4>Ejemplos de uso</h4>
+        <ul>
+          <li>Refrigeradores inteligentes.</li>
+          <li>Focos inteligentes.</li>
+          <li>Relojes y sensores industriales.</li>
+          <li>Autos autónomos.</li>
+        </ul>
+        <h4>Reto principal</h4>
+        <p>Hacer que todos los dispositivos funcionen juntos.</p>
+      </div>
 
-    <!-- 9 -->
-    <h3>9. Low-Code y No-Code</h3>
-    <p>Permiten crear aplicaciones sin escribir código complejo.</p>
-    <h4>Ejemplos</h4>
-    <ul>
-      <li>AppSheet</li>
-      <li>Bubble</li>
-      <li>PowerApps</li>
-    </ul>
-    <h4>¿Por qué es tendencia?</h4>
-    <p>Facilita que cualquier persona cree aplicaciones.</p>
+      <div class="trend-card">
+        <h3>9. Low-Code y No-Code</h3>
+        <p>Permiten crear aplicaciones sin escribir código complejo.</p>
+        <h4>Ejemplos</h4>
+        <ul>
+          <li>AppSheet</li>
+          <li>Bubble</li>
+          <li>PowerApps</li>
+        </ul>
+        <h4>¿Por qué es tendencia?</h4>
+        <p>Facilita que cualquier persona cree aplicaciones.</p>
+      </div>
 
-    <!-- 10 -->
-    <h3>10. Computación cuántica</h3>
-    <p>Ofrece potencial para resolver problemas gigantes en segundos.</p>
-    <h4>¿Qué significa?</h4>
-    <ul>
-      <li>Criptografía avanzada.</li>
-      <li>Ciencia e inteligencia artificial.</li>
-      <li>Aún experimental.</li>
+      <div class="trend-card">
+        <h3>10. Computación cuántica</h3>
+        <p>Ofrece potencial para resolver problemas gigantes en segundos.</p>
+        <h4>¿Qué significa?</h4>
+        <ul>
+          <li>Criptografía avanzada.</li>
+          <li>Ciencia e inteligencia artificial.</li>
+          <li>Aún experimental.</li>
+        </ul>
+      </div>
+
+    </div>
     </ul>
   </section>
 
   <!-- Test -->
-  <section id="test" class="section">
+  <section id="test" class="section section-cta">
     <h2>Test de 5 preguntas</h2>
     <p>Descubre si esta carrera es para ti.</p>
     <a href="vida-universitaria.html" class="button">Comenzar test</a>
