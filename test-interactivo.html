@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Interactivo</title>
+
+  <style>
+    :root {
+      --main: #4cb5f5;
+      --secondary: #e0f7fa;
+      --text: #333;
+      --bg: #f9fafa;
+    }
+
+    body {
+      font-family: "Roboto", Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      color: var(--text);
+    }
+
+    header {
+      background: white;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .section {
+      max-width: 760px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: 600;
+      color: var(--main);
+    }
+
+    .intro-text {
+      font-size: 15px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    /* --- Tarjetas tipo Google Forms --- */
+    .question {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin-bottom: 25px;
+      border: 1px solid #ebebeb;
+    }
+
+    .question:hover {
+      border-color: var(--main);
+      transition: 0.2s ease;
+    }
+
+    .question p {
+      margin: 0 0 15px;
+      font-weight: 500;
+    }
+
+    /* --- Opciones tipo Google Forms --- */
+    .options label {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+
+    .options label:hover {
+      background: var(--secondary);
+    }
+
+    /* Radio custom */
+    .options input[type="radio"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #999;
+      border-radius: 50%;
+      margin-right: 12px;
+      transition: 0.2s ease;
+      position: relative;
+    }
+
+    .options input[type="radio"]:checked {
+      border-color: var(--main);
+    }
+
+    .options input[type="radio"]:checked::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: var(--main);
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+    }
+
+    /* --- Botón --- */
+    button {
+      background: var(--main);
+      color: white;
+      padding: 14px 22px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 10px;
+      transition: background 0.25s ease;
+    }
+
+    button:hover {
+      background: #35a8ef;
+    }
+
+    /* --- Resultado --- */
+    #resultado {
+      margin-top: 30px;
+      padding: 20px 25px;
+      background: var(--secondary);
+      border-left: 6px solid var(--main);
+      border-radius: 8px;
+      display: none;
+      font-size: 17px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">← Regresar</a>
+  </header>
+
+  <section class="section">
+    <h2>Test Interactivo</h2>
+    <h1>¿Tengo el perfil para Ingeniería en Software?</h1>
+    <p class="intro-text">
+      Participa en nuestro test interactivo para descubrir si Ingeniería en Software es la carrera ideal para ti.  
+      Selecciona una respuesta en cada pregunta y al final obtendrás tu resultado.
+    </p>
+
+    <!-- FORM -->
+    <form id="testForm">
+
+      <!-- P1 -->
+      <div class="question">
+        <p>1. ¿Cómo te sientes al enfrentarte a un problema complejo que requiere varios pasos para resolverse?</p>
+        <div class="options">
+          <label><input type="radio" name="p1" value="A"> a) Me frustro rápido y prefiero evitarlo.</label>
+          <label><input type="radio" name="p1" value="B"> b) Lo intento, pero solo si alguien me guía.</label>
+          <label><input type="radio" name="p1" value="C"> c) Me interesa porque me reta.</label>
+          <label><input type="radio" name="p1" value="D"> d) Disfruto los desafíos lógicos.</label>
+        </div>
+      </div>
+
+      <!-- P2 -->
+      <div class="question">
+        <p>2. ¿Qué tan cómodo te sientes aprendiendo nuevas tecnologías o herramientas digitales?</p>
+        <div class="options">
+          <label><input type="radio" name="p2" value="A"> a) Prefiero actividades sin tecnología avanzada.</label>
+          <label><input type="radio" name="p2" value="B"> b) Me cuesta, pero con práctica lo logro.</label>
+          <label><input type="radio" name="p2" value="C"> c) Me adapto bien a lo nuevo.</label>
+          <label><input type="radio" name="p2" value="D"> d) Me entusiasma aprender lo más reciente.</label>
+        </div>
+      </div>
+
+      <!-- P3 -->
+      <div class="question">
+        <p>3. ¿Te gusta trabajar en equipo y comunicar tus ideas claramente?</p>
+        <div class="options">
+          <label><input type="radio" name="p3" value="A"> a) Prefiero trabajar solo.</label>
+          <label><input type="radio" name="p3" value="B"> b) Me cuesta comunicarme.</label>
+          <label><input type="radio" name="p3" value="C"> c) No tengo problema en colaborar.</label>
+          <label><input type="radio" name="p3" value="D"> d) Me gusta comunicar soluciones técnicas.</label>
+        </div>
+      </div>
+
+      <!-- P4 -->
+      <div class="question">
+        <p>4. ¿Cómo reaccionas cuando algo no funciona como esperabas?</p>
+        <div class="options">
+          <label><input type="radio" name="p4" value="A"> a) Me desespero y dejo de intentarlo.</label>
+          <label><input type="radio" name="p4" value="B"> b) Sigo intentando sin estrategia clara.</label>
+          <label><input type="radio" name="p4" value="C"> c) Busco el error y pruebo distintas soluciones.</label>
+          <label><input type="radio" name="p4" value="D"> d) Disfruto analizar el problema hasta encontrar la solución.</label>
+        </div>
+      </div>
+
+      <!-- P5 -->
+      <div class="question">
+        <p>5. ¿Qué tan interesado estás en entender cómo funcionan las aplicaciones o sistemas?</p>
+        <div class="options">
+          <label><input type="radio" name="p5" value="A"> a) Nada interesado.</label>
+          <label><input type="radio" name="p5" value="B"> b) Solo curioso a veces.</label>
+          <label><input type="radio" name="p5" value="C"> c) Normalmente sí me interesa.</label>
+          <label><input type="radio" name="p5" value="D"> d) Me encanta saber qué hay detrás de cada sistema.</label>
+        </div>
+      </div>
+
+      <!-- P6 -->
+      <div class="question">
+        <p>6. ¿Cómo manejas el aprendizaje continuo?</p>
+        <div class="options">
+          <label><input type="radio" name="p6" value="A"> a) No me gusta estudiar cosas nuevas.</label>
+          <label><input type="radio" name="p6" value="B"> b) Lo hago solo si es obligatorio.</label>
+          <label><input type="radio" name="p6" value="C"> c) Me adapto si es necesario.</label>
+          <label><input type="radio" name="p6" value="D"> d) Me gusta aprender constantemente.</label>
+        </div>
+      </div>
+
+      <button type="button" onclick="calcularResultado()">Ver resultado</button>
+    </form>
+
+    <div id="resultado"></div>
+
+  </section>
+
+  <script>
+    function calcularResultado() {
+      const form = document.getElementById("testForm");
+      const preguntas = ["p1","p2","p3","p4","p5","p6"];
+
+      const conteo = { A: 0, B: 0, C: 0, D: 0 };
+
+      for (let p of preguntas) {
+        const seleccionada = form[p].value;
+        if (!seleccionada) {
+          alert("Por favor responde todas las preguntas.");
+          return;
+        }
+        conteo[seleccionada]++;
+      }
+
+      let resultado = "";
+
+      if (conteo.A > conteo.B && conteo.A > conteo.C && conteo.A > conteo.D) {
+        resultado = "Mayoría de A: Probablemente esta carrera no es lo que buscas.";
+      } else if (conteo.B > conteo.A && conteo.B > conteo.C && conteo.B > conteo.D) {
+        resultado = "Mayoría de B: Podrías adaptarte, pero necesitas más interés o motivación.";
+      } else if (conteo.C > conteo.A && conteo.C > conteo.B && conteo.C > conteo.D) {
+        resultado = "Mayoría de C: Tienes características compatibles con Ingeniería en Software.";
+      } else if (conteo.D > conteo.A && conteo.D > conteo.B && conteo.D > conteo.C) {
+        resultado = "Mayoría de D: Tienes un perfil muy adecuado para esta carrera.";
+      } else {
+        resultado = "Tu resultado está equilibrado. Puedes investigar más sobre la carrera para tomar una decisión.";
+      }
+
+      const resultDiv = document.getElementById("resultado");
+      resultDiv.style.display = "block";
+      resultDiv.textContent = resultado;
+    }
+  </script>
+
+</body>
+</html>
